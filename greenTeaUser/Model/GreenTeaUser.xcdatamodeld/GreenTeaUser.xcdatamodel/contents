@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 4.3">
+    <entity name="CaseModel" representedClassName="CaseModel" syncable="YES">
+        <attribute name="attachment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="businessType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="businessTypeLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="caseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="caseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="caseNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="caseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionStr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lawyerNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CaseModel" positionX="-63" positionY="-18" width="128" height="285"/>
+    </elements>
+</model>

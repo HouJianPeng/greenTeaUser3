@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessAreaViewController">
+            <connections>
+                <outlet property="theCollectionView" destination="E47-dO-a9W" id="eLV-sf-JaU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="E47-dO-a9W">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="j8T-0a-t8O">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="25" minY="20" maxX="25" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="96j-JF-eRK"/>
+                        <outlet property="delegate" destination="-1" id="yoe-pm-uIV"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="E47-dO-a9W" secondAttribute="centerX" constant="-203" id="5yq-m9-tmA">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="E47-dO-a9W" secondAttribute="bottom" constant="-87" id="Lwv-OU-lmN">
+                    <variation key="heightClass=regular-widthClass=compact" constant="49"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="E47-dO-a9W" secondAttribute="trailing" constant="-203" id="TYy-Fb-QdT">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="E47-dO-a9W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="87" id="ToX-5W-mD6">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="E47-dO-a9W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="203" id="XVa-co-442">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="E47-dO-a9W"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5yq-m9-tmA"/>
+                    <exclude reference="Lwv-OU-lmN"/>
+                    <exclude reference="TYy-Fb-QdT"/>
+                    <exclude reference="ToX-5W-mD6"/>
+                    <exclude reference="XVa-co-442"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="E47-dO-a9W"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5yq-m9-tmA"/>
+                    <include reference="Lwv-OU-lmN"/>
+                    <include reference="TYy-Fb-QdT"/>
+                    <include reference="ToX-5W-mD6"/>
+                    <include reference="XVa-co-442"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

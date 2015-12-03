@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailInfoViewController">
+            <connections>
+                <outlet property="detaiTitle" destination="iS7-dd-bF8" id="CWh-Am-Fdq"/>
+                <outlet property="detailWebView" destination="T9Y-N3-3ZC" id="0xK-oc-wdO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS7-dd-bF8">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="TaX-YQ-4Xa">
+                            <variation key="heightClass=regular-widthClass=compact" constant="51"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TaX-YQ-4Xa"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="TaX-YQ-4Xa"/>
+                        </mask>
+                    </variation>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9Y-N3-3ZC">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iS7-dd-bF8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SuA-bL-2do"/>
+                <constraint firstAttribute="trailing" secondItem="T9Y-N3-3ZC" secondAttribute="trailing" id="XhP-Me-Ghz"/>
+                <constraint firstAttribute="trailing" secondItem="iS7-dd-bF8" secondAttribute="trailing" constant="8" id="cXy-zg-Vue"/>
+                <constraint firstItem="iS7-dd-bF8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="l7k-Kw-qeb"/>
+                <constraint firstAttribute="bottom" secondItem="T9Y-N3-3ZC" secondAttribute="bottom" constant="35" id="nYC-XK-E5r"/>
+                <constraint firstItem="T9Y-N3-3ZC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oSa-IL-Cg1"/>
+                <constraint firstItem="T9Y-N3-3ZC" firstAttribute="top" secondItem="iS7-dd-bF8" secondAttribute="bottom" constant="1" id="pqh-th-tO3"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="iS7-dd-bF8"/>
+                    <exclude reference="T9Y-N3-3ZC"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="SuA-bL-2do"/>
+                    <exclude reference="cXy-zg-Vue"/>
+                    <exclude reference="l7k-Kw-qeb"/>
+                    <exclude reference="XhP-Me-Ghz"/>
+                    <exclude reference="nYC-XK-E5r"/>
+                    <exclude reference="oSa-IL-Cg1"/>
+                    <exclude reference="pqh-th-tO3"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="iS7-dd-bF8"/>
+                    <include reference="T9Y-N3-3ZC"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="SuA-bL-2do"/>
+                    <include reference="cXy-zg-Vue"/>
+                    <include reference="l7k-Kw-qeb"/>
+                    <include reference="XhP-Me-Ghz"/>
+                    <include reference="nYC-XK-E5r"/>
+                    <include reference="oSa-IL-Cg1"/>
+                    <include reference="pqh-th-tO3"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="142" y="340"/>
+        </view>
+    </objects>
+</document>

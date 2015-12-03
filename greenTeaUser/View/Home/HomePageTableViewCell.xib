@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="HomePageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-Bt-g99">
+                        <rect key="frame" x="8" y="8" width="90" height="80"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8e4-Bt-g99" secondAttribute="height" multiplier="9:8" id="rs1-fP-SDj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯本地律师还是专业律好?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u2-6h-Hmc">
+                        <rect key="frame" x="106" y="8" width="196" height="29"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="R4B-ac-DHN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-06-16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZZ-KA-mHd">
+                        <rect key="frame" x="232" y="69" width="77.5" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更好针对性的回答更好针对性的" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W83-in-Fx6">
+                        <rect key="frame" x="106" y="27" width="196" height="42"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="Po4-A2-vXl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                <constraints>
+                    <constraint firstItem="7u2-6h-Hmc" firstAttribute="leading" secondItem="8e4-Bt-g99" secondAttribute="trailing" constant="8" id="3kd-21-0VS"/>
+                    <constraint firstItem="8e4-Bt-g99" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="6YM-5R-Omy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7u2-6h-Hmc" secondAttribute="trailing" constant="8" id="8mM-4e-mFk"/>
+                    <constraint firstItem="W83-in-Fx6" firstAttribute="trailing" secondItem="YZZ-KA-mHd" secondAttribute="trailing" constant="-8" id="DJp-ze-wAe"/>
+                    <constraint firstItem="8e4-Bt-g99" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="DoX-Ia-YyA"/>
+                    <constraint firstItem="W83-in-Fx6" firstAttribute="bottom" secondItem="YZZ-KA-mHd" secondAttribute="bottom" constant="-17" id="Xd4-x6-0Lb"/>
+                    <constraint firstItem="7u2-6h-Hmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Y1C-CZ-YX1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8e4-Bt-g99" secondAttribute="bottom" constant="-1.5" id="jJA-mZ-be8"/>
+                    <constraint firstItem="8e4-Bt-g99" firstAttribute="bottom" secondItem="W83-in-Fx6" secondAttribute="bottom" constant="19" id="oke-zK-enp"/>
+                    <constraint firstItem="7u2-6h-Hmc" firstAttribute="leading" secondItem="W83-in-Fx6" secondAttribute="leading" id="uHq-qC-0si"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="W83-in-Fx6" secondAttribute="trailing" constant="8" id="vOF-71-DHF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="tf_contentLabel" destination="W83-in-Fx6" id="kee-Yl-Wsj"/>
+                <outlet property="tf_dateLabel" destination="YZZ-KA-mHd" id="7X5-hh-Xte"/>
+                <outlet property="tf_imageView" destination="8e4-Bt-g99" id="sPF-7r-Q7k"/>
+                <outlet property="tf_titleLabel" destination="7u2-6h-Hmc" id="4LE-mn-18v"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="271.5"/>
+        </tableViewCell>
+    </objects>
+</document>

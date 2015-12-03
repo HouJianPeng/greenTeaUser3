@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConsultViewController">
+            <connections>
+                <outlet property="protWebView" destination="VCr-81-CUB" id="YrA-iv-bqO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCr-81-CUB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <variation key="heightClass=regular" ambiguous="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </variation>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VCr-81-CUB" secondAttribute="trailing" id="LtN-2W-l1j"/>
+                <constraint firstAttribute="bottom" secondItem="VCr-81-CUB" secondAttribute="bottom" id="Rsa-zB-RWX"/>
+                <constraint firstItem="VCr-81-CUB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZGs-cR-m7I"/>
+                <constraint firstItem="VCr-81-CUB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jBN-fG-JOA"/>
+                <constraint firstAttribute="centerX" secondItem="VCr-81-CUB" secondAttribute="centerX" id="pdi-V9-PBj"/>
+                <constraint firstAttribute="centerY" secondItem="VCr-81-CUB" secondAttribute="centerY" id="viR-MG-ztg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="LtN-2W-l1j"/>
+                    <exclude reference="Rsa-zB-RWX"/>
+                    <exclude reference="ZGs-cR-m7I"/>
+                    <exclude reference="jBN-fG-JOA"/>
+                    <exclude reference="pdi-V9-PBj"/>
+                    <exclude reference="viR-MG-ztg"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="LtN-2W-l1j"/>
+                    <include reference="Rsa-zB-RWX"/>
+                    <include reference="ZGs-cR-m7I"/>
+                    <include reference="jBN-fG-JOA"/>
+                    <include reference="pdi-V9-PBj"/>
+                    <include reference="viR-MG-ztg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="278" y="285"/>
+        </view>
+    </objects>
+</document>

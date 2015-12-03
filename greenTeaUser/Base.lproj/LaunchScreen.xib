@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-DR-XB4">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="438"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VWz-DR-XB4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2xs-40-Jqe"/>
+                <constraint firstAttribute="centerX" secondItem="VWz-DR-XB4" secondAttribute="centerX" id="VkU-Pw-UlG"/>
+                <constraint firstAttribute="centerY" secondItem="VWz-DR-XB4" secondAttribute="centerY" id="YZS-FP-UZh"/>
+                <constraint firstAttribute="bottom" secondItem="VWz-DR-XB4" secondAttribute="bottom" id="Z2a-gZ-56A"/>
+                <constraint firstItem="VWz-DR-XB4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mpj-eh-e2W"/>
+                <constraint firstAttribute="trailing" secondItem="VWz-DR-XB4" secondAttribute="trailing" id="p6N-mH-e3Q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2xs-40-Jqe"/>
+                    <exclude reference="VkU-Pw-UlG"/>
+                    <exclude reference="YZS-FP-UZh"/>
+                    <exclude reference="Z2a-gZ-56A"/>
+                    <exclude reference="mpj-eh-e2W"/>
+                    <exclude reference="p6N-mH-e3Q"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="2xs-40-Jqe"/>
+                    <include reference="VkU-Pw-UlG"/>
+                    <include reference="YZS-FP-UZh"/>
+                    <include reference="Z2a-gZ-56A"/>
+                    <include reference="mpj-eh-e2W"/>
+                    <include reference="p6N-mH-e3Q"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Default" width="320" height="480"/>
+    </resources>
+</document>

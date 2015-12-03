@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeEmailViewController">
+            <connections>
+                <outlet property="emailTextField" destination="EAK-mc-alp" id="9Fn-B6-CjJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="请输入邮箱地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-mc-alp">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2Bt-st-VGu">
+                            <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2Bt-st-VGu"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2Bt-st-VGu"/>
+                        </mask>
+                    </variation>
+                </textField>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EAK-mc-alp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1nk-do-Ltu"/>
+                <constraint firstItem="EAK-mc-alp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="IIc-hG-GzF">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="EAK-mc-alp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-9" id="cMJ-bI-dw4">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="EAK-mc-alp" secondAttribute="centerX" constant="1.5" id="fa0-hK-yZo"/>
+                <constraint firstAttribute="trailing" secondItem="EAK-mc-alp" secondAttribute="trailing" constant="281" id="kpC-HI-xuT">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="EAK-mc-alp" secondAttribute="trailing" constant="-6" id="wc0-Ne-uxG">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="EAK-mc-alp"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1nk-do-Ltu"/>
+                    <exclude reference="IIc-hG-GzF"/>
+                    <exclude reference="cMJ-bI-dw4"/>
+                    <exclude reference="fa0-hK-yZo"/>
+                    <exclude reference="kpC-HI-xuT"/>
+                    <exclude reference="wc0-Ne-uxG"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="EAK-mc-alp"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1nk-do-Ltu"/>
+                    <include reference="IIc-hG-GzF"/>
+                    <exclude reference="cMJ-bI-dw4"/>
+                    <exclude reference="fa0-hK-yZo"/>
+                    <include reference="kpC-HI-xuT"/>
+                    <exclude reference="wc0-Ne-uxG"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
